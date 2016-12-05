@@ -12,7 +12,7 @@ var Container = PIXI.Container,
     resources = PIXI.loader.resources,
     Sprite = PIXI.Sprite;
 
-//Create a Pixi stage and renderer and add the 
+//Create a Pixi stage and renderer and add the
 //renderer.view to the DOM
 var stage = new Container(),
     renderer = autoDetectRenderer(256, 256);
@@ -27,9 +27,9 @@ var cat, state;
 
 function setup() {
 
-  //Create the `cat` sprite 
+  //Create the `cat` sprite
   cat = new Sprite(resources["images/cat.png"].texture);
-  cat.y = 96; 
+  cat.y = 96;
   cat.vx = 0;
   cat.vy = 0;
   stage.addChild(cat);
@@ -91,7 +91,7 @@ function setup() {
 
   //Set the game state
   state = play;
- 
+
   //Start the game loop
   gameLoop();
 }
@@ -155,7 +155,3 @@ function keyboard(keyCode) {
 
 </script>
 </body>
-
-
-
-

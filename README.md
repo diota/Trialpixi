@@ -28,7 +28,7 @@ for now these are the obstacle that i need to learn before starting to create my
 - [ ] positioning and moving d sprites
 - [ ] learning es6
 - [ ] publishig to googleplay
-- to be found
+- [ ] to be found
 
 
 
@@ -37,4 +37,4 @@ for now these are the obstacle that i need to learn before starting to create my
 <a id='errors'/>
 ###Error that i have found in my journey to awesomeness
 
-1. haven't done anything yet
+- [ ] haven't done anything yet

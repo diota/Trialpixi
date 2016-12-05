@@ -1,3 +1,8 @@
+Trying to commit
+
+
+
+
 Learning Pixi
 =============
 
@@ -164,7 +169,7 @@ webserver in the project's root directory. If you aren't running a
 webserver, Pixi won't work.
 
 Next, you need to install Pixi. There are two ways to do it: the
-**simple** way, with **Git** or with **Gulp and Node**. 
+**simple** way, with **Git** or with **Gulp and Node**.
 
 <a id='installingpixithesimpleway'></a>
 ### Installing Pixi the simple way
@@ -216,7 +221,7 @@ Now you can start working with Pixi!
 You can also use Git to install use Pixi. (What is **git**? If you don't know [you can find out
 here](https://github.com/kittykatattack/learningGit).) This has some advantages:
 you can just run `git pull origin master` from the command line to updated Pixi to
-the latest version. And, if you think you've found a bug in Pixi, 
+the latest version. And, if you think you've found a bug in Pixi,
 you can fix it and submit a pull request to have the bug fix added to the main repository.
 
 To clone the Pixi repository with Git,  `cd`
@@ -285,7 +290,7 @@ Creating the renderer and stage
 
 Now you can start using Pixi!
 
-But how? 
+But how?
 
 The first step is to create a rectangular
 display area that you can start displaying images on. Pixi has a
@@ -294,7 +299,7 @@ automatically generates an HTML `<canvas>` element and figures out how
 to display your images on the canvas. You then need to create a
 special Pixi `Container` object called the `stage`. As you'll see
 ahead, this stage object is going to be used as the root container
-that holds all the things you want Pixi to display. 
+that holds all the things you want Pixi to display.
 
 Here’s the code you need to write to create a `renderer`
 and `stage`. Add this code to your HTML document between the `<script>` tags:
@@ -311,7 +316,7 @@ var stage = new PIXI.Container();
 //Tell the `renderer` to `render` the `stage`
 renderer.render(stage);
 ```
-This is the most basic code you need write to get started using Pixi. 
+This is the most basic code you need write to get started using Pixi.
 It produces a black 256 pixel by 256 pixel canvas element and adds it to your
 HTML document. Here's what this looks like in a browser when you run this code.
 
@@ -353,7 +358,7 @@ the resolutions is a little
 outside the scope of this tutorial, but check out [Mat Grove's
 explanation](http://www.goodboydigital.com/pixi-js-v2-fastest-2d-webgl-renderer/)
 about how to use `resolution` for all the details. But usually, just keep `resolution`
-at 1 for most projects and you'll be fine. 
+at 1 for most projects and you'll be fine.
 
 (Note: The renderer has an additional, fourth, option called `preserveDrawingBuffer` that
 defaults to `false`. The only reason to it set it
@@ -491,10 +496,10 @@ var texture = PIXI.utils.TextureCache["images/anySpriteImage.png"];
 var sprite = new PIXI.Sprite(texture);
 ```
 But how do you load the image file and convert it into a texture? Use
-Pixi’s built-in `loader` object. 
+Pixi’s built-in `loader` object.
 
-Pixi's powerful `loader` object is all you need to load any kind of image. 
-Here’s how to use it to load an image and call a function called `setup` when the 
+Pixi's powerful `loader` object is all you need to load any kind of image.
+Here’s how to use it to load an image and call a function called `setup` when the
 image has finished loading:
 ```js
 PIXI.loader
@@ -514,7 +519,7 @@ var sprite = new PIXI.Sprite(
   PIXI.loader.resources["images/anyImage.png"].texture
 );
 ```
-Here’s an example of some complete code you could write to load an image, 
+Here’s an example of some complete code you could write to load an image,
 call the `setup` function, and create a sprite from the loaded image:
 ```js
 PIXI.loader
@@ -602,7 +607,7 @@ function setup() {
 
   //Add the cat to the stage
   stage.addChild(cat);
-  
+
   //Render the stage   
   renderer.render(stage);
 }
@@ -656,7 +661,7 @@ var Container = PIXI.Container,
     resources = PIXI.loader.resources,
     Sprite = PIXI.Sprite;
 
-//Create a Pixi stage and renderer and add the 
+//Create a Pixi stage and renderer and add the
 //renderer.view to the DOM
 var stage = new Container(),
     renderer = autoDetectRenderer(256, 256);
@@ -765,7 +770,7 @@ PIXI.loader
   .load(setup);
 
 function loadProgressHandler() {
-  console.log("loading"); 
+  console.log("loading");
 }
 
 function setup() {
@@ -807,12 +812,12 @@ PIXI.loader
 function loadProgressHandler(loader, resource) {
 
   //Display the file `url` currently being loaded
-  console.log("loading: " + resource.url); 
+  console.log("loading: " + resource.url);
 
   //Display the precentage of files currently loaded
-  console.log("progress: " + loader.progress + "%"); 
+  console.log("progress: " + loader.progress + "%");
 
-  //If you gave your files names as the first argument 
+  //If you gave your files names as the first argument
   //of the `add` method, you can access them like this
   //console.log("loading: " + resource.name);
 }
@@ -832,7 +837,7 @@ progress: 100%
 All files loaded
 ```
 That's really cool, because you could use this as the basis for
-creating a loading progress bar. 
+creating a loading progress bar.
 
 (Note: There are additional properties you can access on the
 `resource` object. `resource.error` will tell you of any possible
@@ -864,7 +869,7 @@ when using XHR? The default value is `Resource.XHR_RESPONSE_TYPE.DEFAULT`
 `callbackFunction`: The function to call when this specific resource completes loading.
 
 The only one of these arguments that's required is the `url` (the file that you want to
-load.) 
+load.)
 
 Here are some examples of some ways you could use the `add`
 method to load files. These first ones are what the docs call the loader's "normal syntax":
@@ -931,7 +936,7 @@ cat.x = 96;
 cat.y = 96;
 ```
 Add these two lines of code anywhere inside the `setup`
-function, after you've created the sprite. 
+function, after you've created the sprite.
 ```js
 function setup() {
 
@@ -1090,7 +1095,7 @@ cat.pivot.set(32, 32)
 ```
 Assuming that the sprite is 64x64 pixels, the sprite will now rotate
 around its center point. But remember: if you change a sprite's pivot
-point, you've also changed its x/y origin point. 
+point, you've also changed its x/y origin point.
 
 So, what's the difference between `anchor` and `pivot`? They're really
 similar! `anchor` shifts the origin point of the sprite's image texture, using a 0 to 1 normalized value.
@@ -1158,7 +1163,7 @@ function setup() {
 
   //Add the rocket to the stage
   stage.addChild(rocket);
-  
+
   //Render the stage   
   renderer.render(stage);
 }
@@ -1176,7 +1181,7 @@ var rectangle = new PIXI.Rectangle(x, y, width, height);
 The rectangle object is just a *data object*; it's up to you to decide how you want to use it. In
 our example we're using it to define the position and area of the
 sub-image on the tileset that we want to extract. Pixi textures have a useful
-property called `frame` that can be set to any `Rectangle` objects. 
+property called `frame` that can be set to any `Rectangle` objects.
 The `frame` crops the texture to the dimensions of the `Rectangle`.
 Here's how to use `frame`
 to crop the texture to the size and position of the rocket.
@@ -1325,18 +1330,18 @@ Pixi gives you three general ways to create a sprite from a texture atlas:
 var texture = TextureCache["frameId.png"],
     sprite = new Sprite(texture);
 ```
-2.	If you’ve used Pixi’s `loader` to load the texture atlas, use the 
+2.	If you’ve used Pixi’s `loader` to load the texture atlas, use the
 loader’s `resources`:
 ```js
 var sprite = new Sprite(
   resources["images/treasureHunter.json"].textures["frameId.png"]
 );
 ```
-3. That’s way too much to typing to have to do just to create a sprite! 
-So I suggest you create an alias called `id` that points to texture’s 
+3. That’s way too much to typing to have to do just to create a sprite!
+So I suggest you create an alias called `id` that points to texture’s
 altas’s `textures` object, like this:
 ```js
-var id = PIXI.loader.resources["images/treasureHunter.json"].textures; 
+var id = PIXI.loader.resources["images/treasureHunter.json"].textures;
 ```
 Then you can just create each new sprite like this:
 ```js
@@ -1348,7 +1353,7 @@ Here's how you could use these three different sprite creation
 techniques in the `setup` function to create and display the
 `dungeon`, `explorer`, and `treasure` sprites.
 ```js
-//Define variables that might be used in more 
+//Define variables that might be used in more
 //than one function
 var dungeon, explorer, treasure, door, id;
 
@@ -1371,10 +1376,10 @@ function setup() {
   explorer.y = stage.height / 2 - explorer.height / 2;
   stage.addChild(explorer);
 
-  //3. Create an optional alias called `id` for all the texture atlas 
+  //3. Create an optional alias called `id` for all the texture atlas
   //frame id textures.
-  id = PIXI.loader.resources["images/treasureHunter.json"].textures; 
-  
+  id = PIXI.loader.resources["images/treasureHunter.json"].textures;
+
   //Make the treasure box using the alias
   treasure = new Sprite(id["treasure.png"]);
   stage.addChild(treasure);
@@ -1432,7 +1437,7 @@ var Container = PIXI.Container,
     Texture = PIXI.Texture,
     Sprite = PIXI.Sprite;
 
-//Create a Pixi stage and renderer and add the 
+//Create a Pixi stage and renderer and add the
 //renderer.view to the DOM
 var stage = new Container(),
     renderer = autoDetectRenderer(512, 512);
@@ -1443,7 +1448,7 @@ loader
   .add("images/treasureHunter.json")
   .load(setup);
 
-//Define variables that might be used in more 
+//Define variables that might be used in more
 //than one function
 var dungeon, explorer, treasure, door, id;
 
@@ -1466,10 +1471,10 @@ function setup() {
   explorer.y = stage.height / 2 - explorer.height / 2;
   stage.addChild(explorer);
 
-  //3. Create an optional alias called `id` for all the texture atlas 
+  //3. Create an optional alias called `id` for all the texture atlas
   //frame id textures.
-  id = PIXI.loader.resources["images/treasureHunter.json"].textures; 
-  
+  id = PIXI.loader.resources["images/treasureHunter.json"].textures;
+
   //Make the treasure box using the alias
   treasure = new Sprite(id["treasure.png"]);
   stage.addChild(treasure);
@@ -1480,7 +1485,7 @@ function setup() {
   stage.addChild(treasure);
 
   //Make the exit door
-  door = new Sprite(id["door.png"]); 
+  door = new Sprite(id["door.png"]);
   door.position.set(32, 0);
   stage.addChild(door);
 
@@ -1609,7 +1614,7 @@ var Container = PIXI.Container,
     resources = PIXI.loader.resources,
     Sprite = PIXI.Sprite;
 
-//Create a Pixi stage and renderer 
+//Create a Pixi stage and renderer
 var stage = new Container(),
     renderer = autoDetectRenderer(256, 256);
 document.body.appendChild(renderer.view);
@@ -1624,11 +1629,11 @@ var cat;
 
 function setup() {
 
-  //Create the `cat` sprite 
+  //Create the `cat` sprite
   cat = new Sprite(resources["images/cat.png"].texture);
-  cat.y = 96; 
+  cat.y = 96;
   stage.addChild(cat);
- 
+
   //Start the game loop
   gameLoop();
 }
@@ -1681,14 +1686,14 @@ frame:
 ```js
 function setup() {
 
-  //Create the `cat` sprite 
+  //Create the `cat` sprite
   cat = new Sprite(resources["images/cat.png"].texture);
   stage.addChild(cat);
 
   //Initialize the cat's velocity variables
   cat.vx = 0;
   cat.vy = 0;
- 
+
   //Start the game loop
   gameLoop();
 }
@@ -1702,7 +1707,7 @@ function gameLoop(){
   cat.vx = 1;
   cat.vy = 1;
 
-  //Apply the velocity values to the cat's 
+  //Apply the velocity values to the cat's
   //position to make it move
   cat.x += cat.vx;
   cat.y += cat.vy;
@@ -1769,16 +1774,16 @@ var cat, state;
 
 function setup() {
 
-  //Create the `cat` sprite 
+  //Create the `cat` sprite
   cat = new Sprite(resources["images/cat.png"].texture);
-  cat.y = 96; 
+  cat.y = 96;
   cat.vx = 0;
   cat.vy = 0;
   stage.addChild(cat);
 
   //Set the game state
   state = play;
- 
+
   //Start the game loop
   gameLoop();
 }
@@ -2115,7 +2120,7 @@ console.log(animals.toGlobal(cat.position));
 //Displays: Object {x: 80, y: 80...};
 ```
 That gives you an `x` and `y` position of 80. That's exactly the cat's
-global position relative to the top left corner of the stage. 
+global position relative to the top left corner of the stage.
 
 What if you want to find the global position of a sprite, but don't
 know what the sprite's parent container
@@ -2212,7 +2217,7 @@ are set to `false`. That means that if you want change the `rotation`,
 have to set those properties to `true`, like this:
 ```js
 var superFastSprites = new ParticleContainer(
-  size, 
+  size,
   {
     rotation: true,
     alpha: true,
@@ -2227,7 +2232,7 @@ set to `false` to squeeze out the maximum amount of performance.
 What's the `uvs` option? Only set it to `true` if you have particles
 which change their textures while they're being animated. (All the
 sprite's textures will also need to be on the same tileset image for
-this to work.) 
+this to work.)
 
 (Note: **UV mapping** is a 3D graphics display term that refers to
 the `x` and `y` coordinates of the texture (the image) that is being
@@ -3224,7 +3229,7 @@ to use some helper libraries:
   sound and music effects. Everything you need to add sound to games.
 - [Smoothie](https://github.com/kittykatattack/smoothie): Ultra-smooth sprite animation using true delta-time interpolation. It also lets you specify the fps (frames-per-second) at which your game or application runs, and completely separates your sprite rendering loop from your application logic loop.
 
-You can find out how to use all these libraries with Pixi in the book 
+You can find out how to use all these libraries with Pixi in the book
 [Learn PixiJS](http://www.springer.com/us/book/9781484210956).
 
 <a id='hexi'></a>
@@ -3237,7 +3242,7 @@ applications:
 
 https://github.com/kittykatattack/hexi
 
-It bundles the best version of Pixi (the latest stable one) with all these 
+It bundles the best version of Pixi (the latest stable one) with all these
 libraries (and more!) for a simple and fun way to make games. Hexi also
 lets you access the global `PIXI` object directly, so you can write
 low-level Pixi code directly in a Hexi application, and optionally choose to use as many or
@@ -3248,7 +3253,7 @@ Please help to support this project!
 -------------------
 
 Buy the book! Incredibly, someone actually paid me to finish writing this tutorial
-and turn it into a book! 
+and turn it into a book!
 
 [Learn PixiJS](http://www.springer.com/us/book/9781484210956)
 
@@ -3278,4 +3283,3 @@ JavaScript: ES6/2015.
 
 If you want to support this project, please buy a copy of this book,
 and buy another copy for your mom!
-

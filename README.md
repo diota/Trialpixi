@@ -28,7 +28,7 @@ for now these are the obstacle that i need to learn before starting to create my
 - [ ] positioning and moving d sprites
 - [ ] learning es6
 - [ ] publishig to googleplay
-to be found
+- to be found
 
 
 

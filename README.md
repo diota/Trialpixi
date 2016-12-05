@@ -23,11 +23,11 @@ I fork this from https://github.com/kittykatattack/learningPixi
 
 for now these are the obstacle that i need to learn before starting to create my own game
 
--[ ] making the stage
--[ ] displaying the sprites
--[ ] positioning and moving d sprites
--[ ] learning es6
--[ ] publishig to googleplay
+- [ ] making the stage
+- [ ] displaying the sprites
+- [ ] positioning and moving d sprites
+- [ ] learning es6
+- [ ] publishig to googleplay
 to be found
 
 

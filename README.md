@@ -10,7 +10,16 @@ table of content
 <a id='introduction'/>
 Intro
 
-I make this to try creating my own Pixi game for moblie.
+I make this to try creating my own Pixi game for moblie in a period of a month. let me put some emphasis on, A MONTH. and i dont know whether i can make it or not but here goes nothing. frankly i don't know what to say.
+
+
+
+
+
+
+
+
+
 
 
 <a id='reference'/>
@@ -18,13 +27,32 @@ References
 
 I fork this from https://github.com/kittykatattack/learningPixi
 
+
+
+
+
+
+
+
+
+
+
+
 <a id='trials'/>
 Trials to Do
 
 for now these are the obstacle that i need to learn before starting to create my own game
 
-<<<<<<< HEAD
-1.
-=======
-1. 
->>>>>>> Readme
+1. making the stage
+2. displaying the sprites
+3. positioning and moving d sprites
+4. to be continued
+
+
+
+
+
+<a id='errors'/>
+Error that i have found in my journey to awesomeness
+
+1. haven't done anything yet

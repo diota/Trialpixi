@@ -25,7 +25,7 @@ for now these are the obstacle that i need to learn before starting to create my
 
 - [ ] making the stage
 - [ ] displaying the sprites
-- [ ] positioning and moving d sprites
+- [x] positioning and moving d sprites
 - [ ] learning es6
 - [ ] publishig to googleplay
 - [ ] Setting up LAMP server (Linux Apache MySQL PHP)

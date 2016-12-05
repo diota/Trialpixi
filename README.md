@@ -23,4 +23,8 @@ Trials to Do
 
 for now these are the obstacle that i need to learn before starting to create my own game
 
+<<<<<<< HEAD
 1.
+=======
+1. 
+>>>>>>> Readme

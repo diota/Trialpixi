@@ -30,6 +30,9 @@ for now these are the obstacle that i need to learn before starting to create my
 - [ ] publishig to googleplay
 - [x] Setting up LAMP server (Linux Apache MySQL PHP)
 - [ ] Setting up wordpress
+- [ ] Create a simple game
+- [ ] Learn how to make input user and save it on the server
+- [ ] learn how to pull up score data from the server to the game
 - [ ] to be found
 
 
@@ -39,4 +42,5 @@ for now these are the obstacle that i need to learn before starting to create my
 <a id='errors'/>
 ###Error that i have found in my journey to awesomeness
 
-- [ ] haven't done anything yet
+- [ ] some github submodules cannot be clone locally
+- [ ] to be found

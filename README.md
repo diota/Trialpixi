@@ -23,12 +23,13 @@ I fork this from https://github.com/kittykatattack/learningPixi
 
 for now these are the obstacle that i need to learn before starting to create my own game
 
-- [ ] making the stage
-- [ ] displaying the sprites
+- [x] making the stage
+- [x] displaying the sprites
 - [x] positioning and moving d sprites
 - [ ] learning es6
 - [ ] publishig to googleplay
-- [ ] Setting up LAMP server (Linux Apache MySQL PHP)
+- [x] Setting up LAMP server (Linux Apache MySQL PHP)
+- [ ] Setting up wordpress
 - [ ] to be found
 
 

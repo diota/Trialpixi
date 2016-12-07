@@ -33,6 +33,9 @@ for now these are the obstacle that i need to learn before starting to create my
 - [ ] Create a simple game
 - [ ] Learn how to make input user and save it on the server
 - [ ] learn how to pull up score data from the server to the game
+- [ ] learn how to use Ruby on rails
+- [ ] learn how to publish the app on heroku
+- [ ] finish learning the way of the vim
 - [ ] to be found
 
 
@@ -43,4 +46,8 @@ for now these are the obstacle that i need to learn before starting to create my
 ###Error that i have found in my journey to awesomeness
 
 - [ ] some github submodules cannot be clone locally
+- [ ] apparently pixi not yet support the es6 so i have to abandoned ship.
+- [ ] hexi (hex + pixi) created by kittykatattack appaer to be a salvation but some errors were found due to problems with the submodules
+- [ ] phaser.io a bit more complicated than the previous one but looks more promising
+- [ ] roughly three weeks left until i must publish the app
 - [ ] to be found
